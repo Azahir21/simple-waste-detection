@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Waste Detection</title>
+  </head>
+  <body>
+    <h1>Waste Detection</h1>
+    <p>the process takes a few minutes</p>
+    <form action="/prediction" enctype="multipart/form-data" method="POST">
+      <input name="file" type="file" />
+      <input type="submit" />
+    </form>
+
+    {% if original_image %}
+    <h3>Original Image</h3>
+    <img src="data:image/jpeg;base64,{{ original_image }}" />
+    {% else %}
+    <h3>Image will be render here...</h3>
+    {% endif %} {% if result_image %}
+    <h3>Result Image</h3>
+    <img src="data:image/jpeg;base64,{{ result_image }}" />
+    {% endif %} {% if object_count %}
+    <h3>object count</h3>
+    <p>{{ object_count }}</p>
+    {% endif %}
+  </body>
+</html>

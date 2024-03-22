@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+python-multipart
+torch 
+torchvision
+ultralytics
+python-dotenv
+SQLAlchemy
+GeoAlchemy2 == 0.14.6
+alembic
+psycopg2
+passlib[bcrypt]
+python-jose[cryptography]

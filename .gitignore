@@ -1,0 +1,9 @@
+venv/
+best.pt
+assets/
+runs/
+database.txt
+.env
+*.pyc
+*.pyo
+*.pyd
